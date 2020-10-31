@@ -1,5 +1,5 @@
 from newmyproject import db, app
-from flask import render_template, request, url_for, flash, abort, redirect
+from flask import render_template, request, url_for, flash, abort, redirect,Flask
 from flask_login import login_user, login_required, logout_user
 from newmyproject.models import student, company, companyApprovedonly
 from newmyproject.forms import loginForm, registrationForm, companyappr, predicform, companylisthere
