@@ -1,0 +1,20 @@
+
+{% extends "welcome_stud.html" %}
+{% block content %}
+<div class="jumbotron bg-success">
+<h1 class="text-dark">Congratulations you have Passed !!!</h1>
+   <h4 class="text-dark">You Are Applicable For Any Of The Complanies Listed Below</h4>
+
+</div>
+
+<ul class="jumbotron">
+   <h4 class="text-dark">COMPANY DETAILS :</h4>
+   {% for comp in allcomp %}
+
+   <li class="text-dark"> COMPANY NAME : {{ comp.companyname }}</li>
+
+   <li class="text-dark">COMPANY DESCRIPTION : {{ comp.companyinfo }}</li>
+   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+   {% endfor %}
+</ul>
+{% endblock %}

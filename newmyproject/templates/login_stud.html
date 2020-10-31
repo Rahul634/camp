@@ -1,0 +1,16 @@
+{% extends "welcome_stud.html" %}
+{% block content %}
+<form method="post">
+<div class="jumbotron">
+     <h1 class="text-dark">Student LogIn</h1>
+    <h3 class="text-dark">Enter Your Username and Password</h3>
+    {{form_new.hidden_tag()}}
+    {{form_new.username.label}}  {{form_new.username}}
+        <br>
+    {{form_new.password.label}}  {{form_new.password}}
+    <br>
+     {{form_new.submit()}}
+</div>
+    </form>
+
+{% endblock %}

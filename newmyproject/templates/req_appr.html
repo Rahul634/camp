@@ -1,0 +1,17 @@
+{% extends "welcome_comp.html" %}
+{% block content %}
+<form method="post">
+<div class="jumbotron">
+     <h1 class="text-dark">Request For Approval</h1>
+    <br>
+    {{form.hidden_tag()}}
+    {{form.companyname.label}}  {{form.companyname}}
+        <br>
+    {{form.companyinfo.label}}
+    <br>{{form.companyinfo}}
+    <br>
+     {{form.submit()}}
+</div>
+    </form>
+
+{% endblock %}

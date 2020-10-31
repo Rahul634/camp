@@ -1,0 +1,16 @@
+{% extends "welcome_comp.html" %}
+{% block content %}
+<form method="post">
+<div class="jumbotron">
+     <h1 class="text-dark">Company LogIn</h1>
+    <h3 class="text-dark">Enter Your Username and Password</h3>
+    {{form.hidden_tag()}}
+    {{form.username.label}}  {{form.username}}
+        <br>
+    {{form.password.label}}  {{form.password}}
+    <br>
+     {{form.submit()}}
+</div>
+    </form>
+
+{% endblock %}
